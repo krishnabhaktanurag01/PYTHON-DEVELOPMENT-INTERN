@@ -27,7 +27,7 @@ class EmployeeManagementSystem:
                     employee = Employee(row['Name'], row['Position'], float(row['Salary']))
                     self.employee_records[employee.name] = employee
         except FileNotFoundError:
-            # File doesn't exist, initialize an empty records dictionary
+           
             self.employee_records = {}
 
     def save_records(self):
